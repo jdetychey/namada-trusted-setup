@@ -71,7 +71,10 @@ Build the binary:
 ```
 cargo build --release --bin namada-ts --features cli
 ```
-
+If you just did a fresh Rust install, you may need to setup your Rust environment for the previous command to work:
+```
+source $HOME/.cargo/env
+```
 Move binary on `$PATH` (might require sudo):
 ```
 mv target/release/namada-ts /usr/local/bin 
